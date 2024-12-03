@@ -1,0 +1,819 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #000;
+  overflow-x: hidden;
+}
+
+/* Navegação */
+
+header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+header li {
+  list-style-type: none;
+}
+
+.logo-portfolio {
+  cursor: pointer;
+ height: 80px;
+ margin-left: 60px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav li a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #cb6ce6; 
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav li a:hover {
+  color: #6e6571;
+}
+
+.menu-icon {
+  display: none; 
+  font-size: 30px;
+  color: #cb6ce6; 
+  cursor: pointer;
+}
+/* Principal */
+
+main {
+  width: 100%;
+  height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.title-name {
+  margin-left: 7rem;
+}
+
+.title-name p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.title-name .name-principal {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.typing-container {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #CB6CE6;
+}
+
+.foto-principal {
+  width: 70%;
+  max-width: 400px;
+  height: 80%;
+}
+
+/* Cursor estilo e animação */
+
+blinking-cursor {
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  position: relative;
+  top: 0;
+  left: 3px;
+  opacity: 1;
+  animation: blink 0.8s infinite;
+}
+
+
+/* Section Sobre mim */
+
+.about-me {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5rem;
+  flex-wrap: wrap; 
+}
+
+.about-me img {
+  width: 400px;
+  height: 500px;
+  border-radius: 20%;
+  box-shadow: #d180e7 0px 8px 24px;
+}
+
+.about {
+ width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.about h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #cb6ce6;
+  margin-bottom: 3rem;
+  text-align: center;
+  margin-right: 50px;
+  text-shadow: #d180e7 0px 8px 30px;
+}
+
+.title-about {
+  width: 600px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 28px;
+  margin-right: 25px;
+}
+
+/* Habilidades */
+
+.Ability {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.Ability h1 {
+  color: #CB6CE6;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: #d180e7 0px 8px 30px;
+}
+
+.item-ability {
+  width: 100%;
+    display: flex;
+    flex-wrap: row;
+    position: relative;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 6rem;
+
+}
+
+.item{
+width: 100px;
+height: 60px;
+position: relative;
+animation: Ability 10s linear infinite;
+animation-delay: var(--delay);
+cursor: pointer;
+margin: 10px;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Projetos */
+
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.projects h1 {
+  color: #CB6CE6;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  text-shadow: #d180e7 0px 8px 30px;
+}
+
+.card-projects {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cartões dinâmicos */
+  gap: 30px;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(12, 12, 12, 0.8);
+  box-shadow: #e1b9ec 0px 8px 24px;
+}
+
+.card-content img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-content p {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.icones {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.icones img {
+  width: 40px;
+  border-radius: 5px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+.btn button {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: #CB6CE6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn button:hover {
+  background: #a94dc4;
+}
+
+
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #CB6CE6;
+  color: white;
+  border: none;
+  border-radius: 30%;
+  width: 100px;
+  height: 80px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#backToTop:hover {
+  background-color: #a94dc4;
+  transform: scale(1.1);
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* Contato */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.contact h1 {
+  color: #CB6CE6;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: #d180e7 0px 8px 30px;
+  margin-bottom: 2rem;
+}
+
+.get-in-touch {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  gap: 20px; 
+  width: 100%;
+  max-width: 1200px;
+}
+
+.container-contact,
+.contact-section {
+  flex: 1; 
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(203, 108, 230, 0.3);
+  border-radius: 10px;
+}
+
+.container-contact {
+  max-width: 500px; 
+}
+
+.communication,
+.email-communication {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  padding: 10px;
+}
+
+.phone, .email {
+  border-bottom: 1px solid #6e6571;
+}
+
+.text-phone,
+.text-email {
+  color: #CB6CE6;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.redes-social {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px; /* Espaçamento entre os botões */
+  margin-top: 30px;
+}
+
+.rede-linkedin, .rede-github {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+}
+
+.rede-linkedin, .rede-github, .btn-redes {
+  width: 100%;
+}
+
+.curriculum button {
+  width: 100%;
+  margin-top: 20px;
+}
+.contact-section {
+  max-width: 600px; 
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  color: #CB6CE6;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  outline: #a94dc4;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: #CB6CE6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #a94dc4;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #a94dc4;
+}
+
+footer h1 {
+font-size: 2rem;
+color: #fff;
+}
+
+footer h1 span {
+  color: #a94dc4;
+}
+
+
+
+
+
+
+@keyframes Ability {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -50px;
+  }
+}
+
+
+/* Animação */
+
+@keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  main img {
+    width: 400px;
+    height: 500px;
+    border-radius: 20%;
+    box-shadow: #d180e7 0px 8px 24px;
+    margin-right: 6rem;
+  }
+  
+
+/* Animação do About */
+
+@keyframes about {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-me {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+
+.about-me img {
+  width: 400px;
+  height: 500px;
+  border-radius: 20%;
+  box-shadow: #d180e7 0px 8px 24px;
+  opacity: 0;
+  animation: about 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 500px;
+  opacity: 0;
+  animation: about 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.about h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #cb6ce6;
+  margin-bottom: 3rem;
+  text-align: center;
+  margin-right: 40px;
+}
+
+.title-about {
+  width: 650px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Animação Projetos */
+
+@keyframes projects {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.projects {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: projects 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.projects h1 {
+  color: #CB6CE6;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  text-shadow: #d180e7 0px 8px 30px;
+}
+
+.card-projects {
+  width: 90%; /* Corrigido para 90% */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 350px)); /* Ajuste dinâmico */
+  align-items: center;
+  justify-content: center;
+  gap: 30px; /* Espaço entre os itens */
+
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(12, 12, 12, 0.8);
+  box-shadow: #e1b9ec 0px 8px 24px;
+}
+
+
+/* Responsividade Media */
+
+@media (max-width: 768px) {
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  nav ul.menu-open {
+    display: flex;
+  }
+
+  nav li {
+    text-align: center;
+    width: 100%;
+  }
+
+
+  .menu-icon {
+      display: block;
+      margin-left: 30px;
+
+  }
+
+  .menu-open ul{
+    display: flex;
+  }
+
+  .logo-portfolio {
+  display: none;
+  }
+
+  main {
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 52%;
+    margin-left: 35px;
+  }
+
+  .title-name {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .title-name p {
+    font-size: 25px;
+  }
+
+  .title-name .name-principal {
+    font-size: 2.5rem;
+  }
+
+  .typing-container {
+    font-size: 2rem;
+  }
+
+  .foto-principal {
+  display: none;
+  }
+
+  /* Sobre mim */
+
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto; 
+  }
+
+  .about-me img {
+    width: 80%;
+    height: auto;
+    max-width: 300px; 
+    margin-bottom: 2rem;
+    margin-left: 35px;
+  }
+
+  .about {
+    width: 80%; 
+    text-align: center; 
+    margin-left: 35px;
+  }
+
+  .about h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 35px;
+  }
+
+  .title-about {
+    width: 100%; 
+    font-size: 14px; 
+    margin-right: 0;
+    line-height: 24px; 
+  }
+
+  /* Habilidade */
+
+  .Ability h1 {
+    font-size: 2.2rem; 
+    margin-top: 3rem;
+    margin-bottom: 2rem; 
+    margin-left: 30px;
+  }
+
+  .item-ability {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+  }
+
+  .item {
+    width: 300px; 
+    height: auto;
+    animation: Ability 10s linear infinite;
+    animation-delay: var(--delay);
+    margin: 10px;
+  }
+
+  .item img {
+    width: 50px;
+  }
+
+  /* Projetos */
+
+  .projects h1 {
+    font-size: 2.2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 30px;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  margin-bottom: 3rem;
+}
+.contact h1 {
+  font-size: 2.2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 30px;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 35px;
+}
+
+footer img {
+  width: 30px;
+}
+
+footer h1 span {
+  font-size: 1.5rem;
+}
+
+#backToTop {
+  width: 70px; 
+  height: 70px;
+  font-size: 16px; 
+  line-height: 40px; 
+  bottom: 15px; 
+  right: 15px; 
+}
+}
+
+
+
