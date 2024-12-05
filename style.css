@@ -200,14 +200,14 @@ blinking-cursor {
 .item{
 width: 100px;
 position: absolute;
-animation: Ability 20s linear infinite;
+animation: Ability 13s linear infinite;
 animation-delay: var(--delay);
 cursor: pointer;
-margin: 15px;
+margin: 5px;
 }
 
 .item img {
-  width: 70px;
+  width: 100px;
   border-radius: 10px;
 }
 
@@ -227,14 +227,16 @@ margin: 15px;
   font-weight: bold; 
   text-transform: uppercase; 
   margin-bottom: 3rem; 
-  text-shadow: #d180e7 0px 8px 30px; } 
+  text-shadow: #d180e7 0px 8px 30px; 
+} 
 
 .card-projects { 
   width: 90%;
    display: flex; 
    flex-wrap: wrap; 
    gap: 30px; 
-   justify-content: center; } 
+   justify-content: center; 
+  } 
    
 .card-item { 
   height: 430px;
@@ -449,8 +451,12 @@ footer {
   border-top: 1px solid #a94dc4;
 }
 
+footer img {
+  width: 20px;
+}
+
 footer h1 {
-font-size: 2rem;
+font-size: 1rem;
 color: #fff;
 }
 
@@ -786,8 +792,12 @@ footer img {
   width: 25px;
 }
 
+footer h1 {
+  font-size: 20px;
+}
+
 footer h1 span {
-  font-size: 1.5rem;
+  font-size: 20px;
 }
 
 #backToTop {
