@@ -747,12 +747,16 @@ footer h1 span {
     width: 100px; 
     animation: Ability 10s linear infinite;
     animation-delay: var(--delay);
-    margin: 15px;
+    gap: 20px;
   }
 
   .item img {
     width: 40px;
     margin: 30px;
+  }
+
+  .item p {
+    font-size: 15px;
   }
 
   /* Projetos */
