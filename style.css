@@ -283,8 +283,8 @@ color: #fff;
   margin-bottom: 20px; } 
   
 .icones img { 
-  width: 40px; 
-  border-radius: 5px; } 
+  width: 50px; 
+} 
   
 .btn { 
   display: flex; 
@@ -341,7 +341,6 @@ color: #fff;
   opacity: 1;
   visibility: visible;
 }
-
 
 /* Contato */
 
@@ -426,22 +425,6 @@ color: #fff;
 .curriculum button {
   width: 100%;
   margin-top: 20px;
-}
-
-button {
-  padding: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  background: #CB6CE6;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  background: #a94dc4;
 }
 
 /* Footer */
@@ -564,6 +547,7 @@ footer h1 span {
   font-weight: bold;
 }
 
+
 /* Animação Projetos */
 
 @keyframes projects {
@@ -617,6 +601,10 @@ footer h1 span {
   background-color: rgba(12, 12, 12, 0.8);
   box-shadow: #e1b9ec 0px 8px 24px;
 }
+
+
+
+
 
 
 /* Responsividade Media */
@@ -820,6 +808,18 @@ footer h1 span {
   bottom: 15px; 
   right: 15px; 
 }
+}
+
+.btn-projects{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-projects a button{
+  width: 200px;
+  height: 50px;
+  margin-left: 180%;
 }
 
 
