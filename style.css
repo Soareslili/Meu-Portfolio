@@ -616,15 +616,11 @@ main img {
 
 .card-projects {
   width: 90%;
-  /* Corrigido para 90% */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
-  /* Ajuste dinâmico */
   align-items: center;
   justify-content: center;
   gap: 30px;
-  /* Espaço entre os itens */
-
 }
 
 .card-item {
@@ -769,18 +765,19 @@ main img {
 
   .item {
     width: 100px;
-    animation: Ability 10s linear infinite;
+    animation: Ability 12s linear infinite;
     animation-delay: var(--delay);
     gap: 20px;
-  }
-
-  .item img {
-    width: 40px;
     margin: 30px;
   }
 
+  .item img {
+    width: 50px;
+    margin: 40px;
+  }
+
   .item p {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   /* Projetos */
