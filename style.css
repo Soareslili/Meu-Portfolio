@@ -98,6 +98,7 @@ main {
   width: 100%;
   max-width: 400px;
   height: 450px;
+  border-radius: 50%;
 }
 
 /* Cursor estilo e animação */
