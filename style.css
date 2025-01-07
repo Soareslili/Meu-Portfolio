@@ -223,14 +223,12 @@ blinking-cursor {
 
 .projects {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
   margin-top: 15%;
-  margin-bottom: 30px;
 }
 
 .projects h1 {
@@ -358,7 +356,7 @@ blinking-cursor {
 
 .contact {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
