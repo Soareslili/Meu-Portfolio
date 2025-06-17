@@ -1,60 +1,113 @@
-// Menu responsivo 
 
+
+
+// Menu responsivo
 function toggleMenu() {
   const navMenu = document.getElementById("nav-menu");
   navMenu.classList.toggle("menu-open");
 }
 
 
-// Animação do Texto Front End
-const text = "Desenvolvedora Front End";
+const texts = ["Desenvolvedora Front End", "Apaixonada por tecnologia", "Criando soluções web"]; // você pode adicionar mais frases aqui
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typingSpeed = 150;
+const deletingSpeed = 75; 
+const pauseAfterTyping = 1500;
+
 const typingTextElement = document.getElementById("typing-text");
 
-let index = 0;
-let isDeleting = false; // Controla se está apagando o texto
-
 function typeText() {
-    if (!isDeleting && index < text.length) {
-        // Escrevendo o texto
-        typingTextElement.textContent += text.charAt(index);
-        index++;
-        setTimeout(typeText, 200); // Velocidade de digitação
-    } else if (isDeleting && index > 0) {
-        // Apagando o texto
-        typingTextElement.textContent = text.substring(0, index - 1);
-        index--;
-        setTimeout(typeText, 100); // Velocidade de apagamento
+  const currentText = texts[textIndex];
+
+  if (!isDeleting) {
+ 
+    typingTextElement.textContent = currentText.substring(0, charIndex + 1);
+    charIndex++;
+
+    if (charIndex === currentText.length) {
+  
+      isDeleting = true;
+      setTimeout(typeText, pauseAfterTyping);
     } else {
-        // Alterna entre escrevendo e apagando
-        isDeleting = !isDeleting;
-        setTimeout(typeText, 500); // Pausa antes de começar a próxima fase
+      setTimeout(typeText, typingSpeed);
     }
+  } else {
+ 
+    typingTextElement.textContent = currentText.substring(0, charIndex - 1);
+    charIndex--;
+
+    if (charIndex === 0) {
+  
+      isDeleting = false;
+      textIndex = (textIndex + 1) % texts.length;
+      setTimeout(typeText, typingSpeed);
+    } else {
+      setTimeout(typeText, deletingSpeed);
+    }
+  }
 }
 
-// Inicia a animação
-typeText();
+
+if (typingTextElement) {
+  typeText();
+}
 
 
+const canvas = document.getElementById('sparkles-canvas');
+const ctx = canvas.getContext('2d');
 
+let particles = [];
+const numParticles = 100;
 
-// Botão para retornar ao topo 
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
 
-// Seleciona o botão
-const backToTopButton = document.getElementById('backToTop');
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas();
 
-// Mostra o botão quando o usuário rolar para baixo
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
-    backToTopButton.classList.add('show');
-  } else {
-    backToTopButton.classList.remove('show');
+function createParticles() {
+  particles = [];
+  for (let i = 0; i < numParticles; i++) {
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      radius: Math.random() * 2 + 1,
+      alpha: Math.random(),
+      speed: Math.random() * 0.5 + 0.2
+    });
   }
-});
+}
 
-// Rola para o topo da página quando o botão é clicado
-backToTopButton.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
+function drawParticles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (let p of particles) {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(185, 166, 255, ${p.alpha})`; // Tom roxo-lilás claro
+    ctx.fill();
+  }
+}
+
+function updateParticles() {
+  for (let p of particles) {
+    p.y -= p.speed;
+    if (p.y < 0) {
+      p.y = canvas.height;
+      p.x = Math.random() * canvas.width;
+    }
+  }
+}
+
+function animateParticles() {
+  drawParticles();
+  updateParticles();
+  requestAnimationFrame(animateParticles);
+}
+
+createParticles();
+animateParticles();
+

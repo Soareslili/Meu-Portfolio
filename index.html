@@ -4,190 +4,184 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link rel="stylesheet" href="style.css" />
   <title>Portofolio - Lidiane Soares</title>
 </head>
 
 <body>
-  <header>
-    <img src="./img/Logo.png" alt="logo" class="logo-portfolio" id="home" />
-    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-    <nav id="nav-menu">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#habilidade">Habilidades</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+ <header>
+  <div class="logo-text" id="home">Lid.Dev</div>
+  <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+  <nav id="nav-menu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#habilidade">Habilidades</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="hero">
+  <canvas id="sparkles-canvas"></canvas>
+  <div class="content">
+    <p class="intro-text" data-aos="fade-up" data-aos-duration="1000">Olá, eu sou</p>
+    <h1 class="name-principal" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Lidiane Santos Soares</h1>
+    <p class="subtitle" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">Desenvolvedora Front End <br> Apaixonada por tecnologiariando soluções web</p>
+  </div>
+</main>
 
 
-  <main>
-    <div id="home" class="title-name">
-      <p>Olá, eu sou</p>
-      <p class="name-principal">Lidiane Santos Soares</p>
 
-      <div class="typing-container">
-        <span id="typing-text"></span>
-        <span class="blinking-cursor">|</span>
-      </div>
-    </div>
-    <img src="./img/Lidiane Soares.png" alt="foto-principal" class="foto-principal" />
-  </main>
 
   <section id="sobre" class="about-me">
-    <img src="./img/Lidiane Santos.png" alt=".foto-sobre" />
+    <img src="./img/Lidiane- Soares.png" alt=".foto-sobre" />
     <div class="about">
       <h1>Sobre Mim</h1>
       <p class="title-about">
-        Profissional em transição de carreira da área da saúde para
-        Desenvolvedora WEB e Programadora Front End. Experiência em
-        desenvolvimento de projeto, garantindo o alinhamento com ferramentas,
-        e aplicações de tecnologias. Vivenciando e utilização de tecnologias
-        como HTML, CSS, Javascript, React, Node.js, Bootstrap, Git, Figma,
-        MongoDB, Prisma, jQuery. Habilidade em entender as necessidades dos clientes e
-        aplicar soluções técnicas que atendam às suas expectativas. Sou
-        proativa, sempre buscando novas oportunidades para aprender e
-        melhorar. Foco em entregar trabalho de alta qualidade. Excelentes
-        habilidades de comunicação, facilitando o trabalho em equipe e a
-        colaboração. Gosto de colaborar com outros profissionais para alcançar
-        objetivos comuns. Comprometida em alcançar metas e superar desafios.
-      </p>
+  Sou desenvolvedora Front-End, atualmente atuando como freelancer em projetos web. Após uma sólida experiência na área da saúde, estou em transição de carreira para a tecnologia, com foco total em desenvolvimento de interfaces modernas e responsivas. Possuo experiência prática em tecnologias como HTML, CSS, JavaScript, React, Node.js, MongoDB, Figma e Git.
+
+  Estou sempre em busca de aprendizado contínuo, me atualizando com bootcamps, tailwind, prisma, cursos e projetos reais. Tenho facilidade em entender as necessidades dos clientes e transformar ideias em soluções funcionais e com design atrativo. Além disso, valorizo a colaboração, o trabalho em equipe e a entrega de resultados de qualidade.
+
+  Meu objetivo é ajudar empresas e empreendedores a terem uma presença online forte, desenvolvendo sites que tragam resultados.
+</p>
     </div>
-    <button id="backToTop" title="Voltar ao topo">↑ Topo</button>
   </section>
 
-  <section id="habilidade" class="Ability">
-    <h1>Habilidades</h1>
-    <div class="item-ability">
-      <div class="item" style="--delay: 0s">
-        <img src="./img/img.icons8 11.png" alt="html" />
-        <p>HTML</p>
-      </div>
-      <div class="item" style="--delay: 1s">
-        <img src="./img/img.icons8 2.png" alt="css" />
-        <p>CSS</p>
-      </div>
-      <div class="item" style="--delay: 2s">
-        <img src="./img/img.icons8 3.png" alt="javascript" />
-        <p>JAVASCRIPT</p>
-      </div>
-      <div class="item" style="--delay: 3s">
-        <img src="./img/download 1.png" alt="react" />
-        <p>REACT</p>
-      </div>
-      <div class="item" style="--delay: 4s">
-        <img src="./img/img.icons8 4.png" alt="node" />
-        <p>NODEJS</p>
-      </div>
-      <div class="item" style="--delay: 5s">
-        <img src="./img/download 2.png" alt="bootstrap" />
-        <p>BOOTSTRAP</p>
-      </div>
-      <div class="item" style="--delay: 6s">
-        <img src="./img/download 3.png" alt="git" />
-        <p>GIT</p>
-      </div>
-      <div class="item" style="--delay: 7s">
-        <img src="./img/img.icons8 6.png" alt="figma" />
-        <p>FIGMA</p>
-      </div>
-      <div class="item" style="--delay: 8s">
-        <img src="https://img.icons8.com/color/48/mongo-db.png" alt="mongo-db">
-        <p>MONGODB</p>
-      </div>
-      <div class="item" style="--delay: 9s">
-        <img src="https://img.icons8.com/color/48/prisma-orm.png" alt="prisma-orm">
-        <p>PRISMA</p>
-      </div>
-      <div class="item" style="--delay: 10s">
-        <img src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>
-     <p>TAILWIND</p>
-      </div>
+  <section id="habilidade" class="ability">
+  <h1>HABILIDADES</h1>
+  <div class="abilities-container">
+    <div class="card">
+      <img src="./img/img.icons8 11.png" alt="HTML" />
+      <p>HTML</p>
     </div>
-    <button id="backToTop" title="Voltar ao topo">↑ Topo</button>
-  </section>
+    <div class="card">
+      <img src="./img/img.icons8 2.png" alt="CSS" />
+      <p>CSS</p>
+    </div>
+    <div class="card">
+      <img src="./img/img.icons8 3.png" alt="JavaScript" />
+      <p>JavaScript</p>
+    </div>
+    <div class="card">
+      <img src="./img/download 1.png" alt="React" />
+      <p>React</p>
+    </div>
+    <div class="card">
+      <img src="./img/img.icons8 4.png" alt="Node.js" />
+      <p>Node.js</p>
+    </div>
+  <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Figma" />
+      <p>Figma</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/fluency/50/bootstrap.png" alt="bootstrap"/>
+      <p>Bootcamp</p>
+    </div>
+    <div class="card">
+     <img  src="https://img.icons8.com/color/48/mongo-db.png" alt="mongo-db"/>
+      <p>MongoDB</p>
+    </div>
+    <div class="card">
+ <img  src="https://img.icons8.com/color/48/typescript.png" alt="typescript"/>
+  <p>TypeScript</p>
+</div>
+<div class="card">
+ <img  src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>
+   <p>Tailwind</p>
+</div>
+
+<div class="card">
+ <img  src="https://img.icons8.com/color/48/prisma-orm.png" alt="prisma-orm"/>
+   <p>Prisma</p>
+</div>
+  </div>
+</section>
+
 
   <section id="projetos" class="projects">
     <h1>Projetos</h1>
     <div class="card-projects">
-      <div class="card-item">
+    <div class="card-item" data-aos="fade-up" data-aos-delay="100">
+
         <div class="card-content">
-          <img src="./img/Netflix.png" alt="foto-netflix" />
-          <h3>Projeto - Clone do Netflix</h3>
+          <img src="./img/DocesHeloisa.png" alt="DocesHeloisa" />
+          <h3>Projeto - Doces e mais Doces Heloisa</h3>
           <p>
-            Clone do Netflix - Desenvolvi este projeto, inspirado no design
-            original do Netflix.
+             Site de apresentação para uma loja de doces, desenvolvido como projeto personalizado para uma cliente.
           </p>
         </div>
         <div class="icones">
           <img src="./img/img.icons8 11.png" alt="html" />
-          <img src="./img/img.icons8 2.png" alt="css" />
+        <img  src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>
           <img src="./img/img.icons8 3.png" alt="javascript" />
-          <img src="./img/download 2.png" alt="bootstrap" />
+        
         </div>
+
+      
         <div class="btn">
-          <a href="https://projetonetflix.lidianesoares.com " target="_blank">
+          <a href="https://projeto-doces-e-mais-doces-heloisa.vercel.app/" target="_blank">
             <button>Visitar</button>
           </a>
-          <a href="https://github.com/Soareslili/Projeto-Netflix.git" target="_blank">
+          <a href="https://github.com/Soareslili/Projeto-Doces-e-mais-Doces-heloisa.git" target="_blank">
             <button>Repositório</button>
           </a>
         </div>
       </div>
 
-      <!-- Mario Encanador -->
-      <div class="card-item">
+
+   <div class="card-item" data-aos="fade-up" data-aos-delay="100">
+
         <div class="card-content">
-          <img src="./img/CadastrodeUsuario.png" alt="foto-cadastro-do-usuário" />
-          <h3>Projeto - Cadastro de Usuários</h3>
+          <img src="./img/EnergyHub.png" alt="EnergyHub" />
+          <h3>Projeto -  Elektos - EnergyHub</h3>
           <p>
-            Projeto Cadastro de Usuários. Projeto realizado para cadastrar usuários, editar ou deletar usuários,
-            com tecnologia React, Node, Mongodb, Prisma. 
+            A proposta consiste na criação de um dashboard responsivo e funcional utilizando React e Tailwind CSS, com dados mockados e elementos interativos.
           </p>
         </div>
         <div class="icones">
           <img src="https://img.icons8.com/office/40/react.png" alt="react"/>
-          <img src="https://img.icons8.com/color/48/mongo-db.png" alt="mongo-db"/>
-          <img src="https://img.icons8.com/color/48/prisma-orm.png" alt="prisma-orm"/>
+          <img  src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>
         </div>
         <div class="btn">
-          <a href="https://soareslili.github.io/Projeto-Devclub-Cadastro-Usuario/" target="_blank">
+          <a href="https://projeto-elektos-enery-hub.vercel.app/" target="_blank">
             <button>Visitar</button>
           </a>
-          <a href="https://github.com/Soareslili/Projeto-Devclub-Cadastro-Usuario.git" target="_blank">
+          <a href="https://github.com/Soareslili/projeto-Elektos---EneryHub.git" target="_blank">
             <button>Repositório</button>
           </a>
         </div>
       </div>
 
-      <div class="card-item">
+   <div class="card-item" data-aos="fade-up" data-aos-delay="100">
+
         <div class="card-content">
-          <img src="./img/Conversor-Dinheiro.png" alt="foto-coversor-de-moeda" />
-          <h3>Projeto - Convert Money</h3>
+          <img src="./img/Hamburgueria.png" alt="Hamburgueria" />
+          <h3>Projeto - Cardápio Burger</h3>
           <p>
-            Convert Money -Conversor de dinheiro, convertendo do Real para o
-            Dólar e Euro.
+            Proejto desenvolvido para um Cardápio de um Hamburgueria de lanches, com a facilidade do cliente poder solicitar seus pedidos.
           </p>
         </div>
         <div class="icones">
           <img src="./img/img.icons8 11.png" alt="html" />
-          <img src="./img/img.icons8 2.png" alt="css" />
+          <img  src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>
           <img src="./img/img.icons8 3.png" alt="javascript" />
         </div>
         <div class="btn">
-          <a href="https://soareslili.github.io/Convert-Money/" target="_blank">
+          <a href="https://projeto-cardapio-burger.vercel.app/" target="_blank">
             <button>Visitar</button>
           </a>
-          <a href="https://github.com/Soareslili/Convert-Money.git" target="_blank">
+          <a href="https://github.com/Soareslili/Projeto-Cardapio-Burger.git" target="_blank">
             <button>Repositório</button>
           </a>
         </div>
       </div>
 
-      <div class="card-item">
+   <div class="card-item" data-aos="zoom-in" data-aos-delay="150">
+
         <div class="card-content">
           <img src="./img/Burger.png" alt="foto-burger" />
           <h3>Projeto - Burger</h3>
@@ -211,31 +205,32 @@
         </div>
       </div>
 
-      <div class="card-item">
+   <div class="card-item" data-aos="zoom-in" data-aos-delay="150">
+
         <div class="card-content">
-          <img src="./img/Jokenpo.png" alt="foto-Johenpo" />
-          <h3>Projeto Jogo Jokenpo</h3>
+          <img src="./img/Dentista.png" alt="Dentista" />
+          <h3>Projeto Sorriso Feliz Clínica</h3>
           <p>
-            Projeto Jogo Jokenpo - Jogo com animação de plano de fundo, que
-            atualizando a pagina, a imagem de fundo altera.
+            Este é um site institucional para a clínica odontológica Sorriso Feliz. O projeto visa promover os serviços da clínica, facilitar o agendamento de consultas e transmitir confiança aos visitantes por meio de um design moderno e acolhedor.
           </p>
         </div>
         <div class="icones">
-          <img src="./img/img.icons8 11.png" alt="html" />
-          <img src="./img/img.icons8 2.png" alt="css" />
-          <img src="./img/img.icons8 3.png" alt="javascript" />
+       <img src="https://img.icons8.com/color/48/nextjs.png" alt="nextjs"/>
+            <img  src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>
+       <img  src="https://img.icons8.com/color/48/typescript.png" alt="typescript"/>
         </div>
         <div class="btn">
-          <a href="https://projetojokenpo.lidianesoares.com" target="_blank">
+          <a href="https://sorriso-feliz-cl-nica.vercel.app/" target="_blank">
             <button>Visitar</button>
           </a>
-          <a href="https://github.com/Soareslili/Projeto-JoKenp-.git" target="_blank">
+          <a href="https://github.com/Soareslili/Sorriso-Feliz-Cl-nica.git" target="_blank">
             <button>Repositório</button>
           </a>
         </div>
       </div>
 
-      <div class="card-item">
+   <div class="card-item" data-aos="zoom-in" data-aos-delay="150">
+
         <div class="card-content">
           <img src="./img/Previsãodotempo.png" alt="foto-Previsão do tempo" />
           <h3>Projeto Previsão do tempo</h3>
@@ -258,31 +253,32 @@
         </div>
       </div>
 
-      <div class="card-item">
+ <div class="card-item" data-aos="flip-left" data-aos-delay="200">
+
         <div class="card-content">
-          <img src="./img/jogodavelha.png" alt="foto-jogo-da-velha" />
-          <h3>Projeto Jogo da Velha</h3>
+          <img src="./img/BellaNails.png" alt="BellaNails" />
+          <h3>Projeto  Studio Bella Nails</h3>
           <p>
-            Projeto Jogo da Velha - Realizado projeto de um jogo da velha, com todas as funções, com cores bonitas,
-            responsiva.
+             Studio Bella Nails, um projeto de landing page moderno e elegante para um estúdio de manicure e pedicure.
           </p>
         </div>
         <div class="icones">
           <img src="./img/img.icons8 11.png" alt="html" />
-          <img src="./img/img.icons8 2.png" alt="css" />
+           <img  src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>
           <img src="./img/img.icons8 3.png" alt="javascript" />
         </div>
         <div class="btn">
-          <a href="https://soareslili.github.io/Projeto-Jogo-da-Velha/" target="_blank">
+          <a href="https://studio-bella-nails.vercel.app/" target="_blank">
             <button>Visitar</button>
           </a>
-          <a href="https://github.com/Soareslili/Projeto-Jogo-da-Velha.git" target="_blank">
+          <a href="https://github.com/Soareslili/Studio-Bella-Nails.git" target="_blank">
             <button>Repositório</button>
           </a>
         </div>
       </div>
 
-      <div class="card-item">
+    <div class="card-item" data-aos="flip-left" data-aos-delay="200">
+
         <div class="card-content">
           <img src="./img/jogodamemoria.png" alt="foto-jogo-da-memoria" />
           <h3>Projeto da Memória</h3>
@@ -304,7 +300,9 @@
           </a>
         </div>
       </div>
-      <div class="card-item">
+
+    <div class="card-item" data-aos="flip-left" data-aos-delay="200">
+
         <div class="card-content">
           <img src="./img/todolist.png" alt="foto-cronometro" />
           <h3>Projeto To do List</h3>
@@ -327,7 +325,7 @@
         </div>
 
 
-        <button id="backToTop" title="Voltar ao topo">↑ Topo</button>
+       
     </div>  
    
   </section>
@@ -365,7 +363,7 @@
         </div>
       </div>
     </div>
-    <button id="backToTop" title="Voltar ao topo">↑ Topo</button>
+  
   </section>
 
   <footer>
@@ -373,6 +371,14 @@
     <h1>2024 <span>Lidiane Santos Soares</span></h1>
   </footer>
 </body>
+
 <script src="./script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    once: true
+  });
+</script>
 
 </html>
