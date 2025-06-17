@@ -35,9 +35,6 @@ O objetivo é compartilhar minhas experiências, demonstrar minhas habilidades c
 
 ---
 
-## 🚀 Como visualizar o site
 
-Você pode acessar a versão online através deste link:  
-👉 [https://meuportfolio.lidianesoares.com](https://meuportfolio.lidianesoares.com) (coloque seu link real aqui)
 
 
